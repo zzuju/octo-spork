@@ -1,37 +1,148 @@
-## Welcome to GitHub Pages
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>
 
-You can use the [editor on GitHub](https://github.com/zzuju/octo-spork/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+</title><link href="http://tzjxjy.tzks.net/manager/Styles/Global.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://tzjxjy.tzks.net/manager/My97DatePicker/WdatePicker.js"></script><link href="http://tzjxjy.tzks.net/manager/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+        function autoRowSpan(tb, row, col) {
+            var lastValue = "";
+            var value = "";
+            var pos = 1;
+            for (var i = row; i < tb.rows.length; i++) {
+                value = tb.rows[i].cells[col].innerText;
+                if (lastValue == value) {
+                    tb.rows[i].deleteCell(col);
+                    tb.rows[i - pos].cells[col].rowSpan = tb.rows[i - pos].cells[col].rowSpan + 1;
+                    pos++;
+                } else {
+                    lastValue = value;
+                    pos = 1;
+                }
+            }
+        }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    </script>
+</head>
+<body onload="autoRowSpan(tblist,0,0)">
+    <form name="form1" method="post" action="zhengming_yz.aspx?str=331081198110277126%7c2014%7c2018-10-19" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjE5MTE1NDQ0D2QWAgIBD2QWAgIBD2QWEAIBDw8WAh4EVGV4dAUG6ZmI55GcZGQCAw8PFgIfAAUD5aWzZGQCBQ8PFgIfAAUSMzMxMDgxMTk4MTEwMjc3MTI2ZGQCBw8PFgIfAAUJ5rip5bKt5biCZGQCCQ8PFgIfAAUa5Lit5bCP5a2m5pWZ5biIKOWQq+W5vOW4iClkZAINDw8WAh8ABTAyMDE0IOW5tCDigJTigJQgMjAxOC0xMC0xOSDlubTojrflvpflrabml7bliJfooahkZAIPDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWAmYPFQYEMjAxOAoyMDE4LTEwLTE5GOeJqeiBlOe9keaKgOacr+S4juW6lOeUqA/kuIDoiKzlhazpnIDor74G5ZCI5qC8AjI0ZAIRDw8WAh4ISW1hZ2VVcmwFpwFodHRwOi8vdHpqeGp5LnR6a3MubmV0L2luZGV4LnBocC9ob21lL3B1YmxpY3MvcXJjb2RlLmh0bWw/dXJsPWh0dHA6Ly90emp4ankudHprcy5uZXQvbWFuYWdlci9zdHVpbmZvTWFuYWdlci96aGVuZ21pbmdfeXouYXNweD9zdHI9JzMzMTA4MTE5ODExMDI3NzEyNnwyMDE0fDIwMTgtMTAtMTknIGRkZKalh36ggmdkjxbtnGTiMj1QLFLLzqk/FNxx+q+BjPQd">
+</div>
 
-### Markdown
+         <div id="PrintContent" style="width: 800px; height: 1150px; overflow: auto; margin: 0 auto;   border: solid 1px #808080;position:relative;">
+                <div style="position:absolute; z-index:0; top: 2px; left: 0px;overflow:hidden">
+			        <img id="bgImage" style="width: 800px; height: 1130px;" alt="" src="http://tzjxjy.tzks.net/manager/images/zsbg.png">	
+                </div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+                <div style="width: 680px; height: auto;margin:0 auto;margin-top:50px; position:relative;background-color:rgba(255,255,255,0.1);">
 
-```markdown
-Syntax highlighted code block
+                    <h1 style="text-align: center; font-size: 18pt; font-weight: bolder; padding: 20px; line-height: 20px;">台州市专业技术人员继续教育学时证明 
+                    </h1>
+                    <table class="TableData" style="font-size:9pt">
+                        <tbody><tr>
+                            <td align="center">姓名</td>
+                            <td>
+                                <span id="lblStudentName">陈瑜</span></td>
+                            <td align="center">性别</td>
+                            <td>
+                                <span id="lblSex">女</span></td>
+                            <td align="center">身份证号</td>
+                            <td>
+                                <span id="lblIDCard">331081198110277126</span></td>
 
-# Header 1
-## Header 2
-### Header 3
+                        </tr>
+                        <tr>
 
-- Bulleted
-- List
+                            <td align="center">所属地区</td>
+                            <td>
+                                <span id="lblArea">温岭市</span></td>
+                            <td align="center">所属行业</td>
+                            <td>
+                                <span id="lblZhuanye">中小学教师(含幼师)</span>
+                            </td>
+                            <td align="center">工作单位</td>
+                            <td>
+                                <span id="lblCompanyName"></span>
+                            </td>
+                        </tr>
 
-1. Numbered
-2. List
+                        <tr>
+                            <td colspan="6" style="text-align: center; font-size: 9pt; padding: 10px">
+                                <span id="lbltitle">2014 年 —— 2018-10-19 年获得学时列表</span></td>
+                        </tr>
+                    </tbody></table>
+                    <table id="tblist" class="TableData" style="font-size:9pt">
+                        <colgroup>
+                            <col width="60">
+                            <col width="100">
+                            <col width="120">
+                            <col width="80">
+                            <col width="60">
+                            <col width="60">
+                        </colgroup>
+                        <tbody><tr class="TableHeader">
+                            <td align="center">年份</td>
+                            <td align="center">时间</td>
+                            <td align="center">课程名称/证明材料</td>
+                            <td align="center">类型</td>
+                            <td align="center">成绩/数量</td>
+                            <td align="center">学时</td>
+                        </tr>
+                        
+                                <tr class="TableRow">
+                                    <td align="center">2018</td>
+                                    <td align="center">2018-08-19</td>
+                                    <td align="center">物联网技术与应用</td>
+                                    <td align="center">一般公需课</td>
+                                    <td align="center">合格</td>
+                                    <td align="center">24</td>
+                                </tr>
+                            
 
-**Bold** and _Italic_ and `Code` text
+                        
+                    </tbody></table>
+                </div>
+                <div id="bottom" style="height: 110px; width:660px; padding: 10px; margin:0 auto;  position:relative;">
+                    <div style="width: 100px; float: left; margin: 10px;padding-left:10px;">
+                        <img id="Image1" src="http://tzjxjy.tzks.net/index.php/home/publics/qrcode.html?url=http://tzjxjy.tzks.net/manager/stuinfoManager/zhengming_yz.aspx?str='331081198110277126|2014|2018-10-19' " style="height:90px;width:90px;border-width:0px;">
+                    </div>
+                    <div id="div_zhang" style="height:110px;width:260px; position:relative; float: right;">
+                        <div style="width: 260px;  text-align:center; position:absolute;z-index:2; ">
+                             <img id="imgzhang" src="http://tzjxjy.tzks.net/manager/Images/bg_zhang.gif" style="height:110px;width:110px;border-width:0px;">
+                        </div>
+                        <div style="height: 110px; width: 260px; height:100px; padding-top:20px; text-align: center; line-height: 30px; vertical-align: middle; position:absolute; z-index:1;  "> 
+                            台州市人力资源与社会保障局<br>
+                            打印日期：<span id="lblPrintDate">2018年10月6日</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+    </form>
+    <script type="text/javascript">
+        function PrintContent() {
+            //获得窗口的垂直位置 
+            var iTop = (window.screen.availHeight - 30 - 800) / 2;
+            //获得窗口的水平位置 
+            var iLeft = (window.screen.availWidth - 10 - 700) / 2;
 
-[Link](url) and ![Image](src)
-```
+            var pc = document.getElementById("PrintContent");
+            var pw = window.open('', '', 'width=700,height=800, top = ' + iTop + ', left = ' + iLeft);
+            pw.document.write('<html>');
+            pw.document.write('<head>');
+            pw.document.write('<title>继续教育学时证明打印</title>');
+            pw.document.write('<link href="http://tzjxjy.tzks.net/manager/Styles/Global.css" rel="stylesheet" type="text/css" /> ');
+            pw.document.write('</head>');
+            pw.document.write('<body>');
+            pw.document.write(pc.innerHTML);
+            pw.document.write('</body>');
+            pw.document.write('</html>');
+            pw.document.close();
+            setTimeout(function () {
+                pw.print();
+            }, 500);
+            return false;
+        }
+    </script>
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zzuju/octo-spork/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body></html>
