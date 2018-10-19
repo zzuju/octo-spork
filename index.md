@@ -1,28 +1,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><title>
 
 </title><link href="http://tzjxjy.tzks.net/manager/Styles/Global.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="http://tzjxjy.tzks.net/manager/My97DatePicker/WdatePicker.js"></script><link href="http://tzjxjy.tzks.net/manager/My97DatePicker/skin/WdatePicker.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript">
-        function autoRowSpan(tb, row, col) {
-            var lastValue = "";
-            var value = "";
-            var pos = 1;
-            for (var i = row; i < tb.rows.length; i++) {
-                value = tb.rows[i].cells[col].innerText;
-                if (lastValue == value) {
-                    tb.rows[i].deleteCell(col);
-                    tb.rows[i - pos].cells[col].rowSpan = tb.rows[i - pos].cells[col].rowSpan + 1;
-                    pos++;
-                } else {
-                    lastValue = value;
-                    pos = 1;
-                }
-            }
-        }
 
-    </script>
 </head>
-<body onload="autoRowSpan(tblist,0,0)">
+<body onLoad="autoRowSpan(tblist,0,0)">
     <form name="form1" method="post" action="zhengming_yz.aspx?str=331081198110277126%7c2014%7c2018-10-19" id="form1">
 <div>
 <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNjE5MTE1NDQ0D2QWAgIBD2QWAgIBD2QWEAIBDw8WAh4EVGV4dAUG6ZmI55GcZGQCAw8PFgIfAAUD5aWzZGQCBQ8PFgIfAAUSMzMxMDgxMTk4MTEwMjc3MTI2ZGQCBw8PFgIfAAUJ5rip5bKt5biCZGQCCQ8PFgIfAAUa5Lit5bCP5a2m5pWZ5biIKOWQq+W5vOW4iClkZAINDw8WAh8ABTAyMDE0IOW5tCDigJTigJQgMjAxOC0xMC0xOSDlubTojrflvpflrabml7bliJfooahkZAIPDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWAmYPFQYEMjAxOAoyMDE4LTEwLTE5GOeJqeiBlOe9keaKgOacr+S4juW6lOeUqA/kuIDoiKzlhazpnIDor74G5ZCI5qC8AjI0ZAIRDw8WAh4ISW1hZ2VVcmwFpwFodHRwOi8vdHpqeGp5LnR6a3MubmV0L2luZGV4LnBocC9ob21lL3B1YmxpY3MvcXJjb2RlLmh0bWw/dXJsPWh0dHA6Ly90emp4ankudHprcy5uZXQvbWFuYWdlci9zdHVpbmZvTWFuYWdlci96aGVuZ21pbmdfeXouYXNweD9zdHI9JzMzMTA4MTE5ODExMDI3NzEyNnwyMDE0fDIwMTgtMTAtMTknIGRkZKalh36ggmdkjxbtnGTiMj1QLFLLzqk/FNxx+q+BjPQd">
@@ -118,31 +99,4 @@
         </div>
         
     </form>
-    <script type="text/javascript">
-        function PrintContent() {
-            //获得窗口的垂直位置 
-            var iTop = (window.screen.availHeight - 30 - 800) / 2;
-            //获得窗口的水平位置 
-            var iLeft = (window.screen.availWidth - 10 - 700) / 2;
-
-            var pc = document.getElementById("PrintContent");
-            var pw = window.open('', '', 'width=700,height=800, top = ' + iTop + ', left = ' + iLeft);
-            pw.document.write('<html>');
-            pw.document.write('<head>');
-            pw.document.write('<title>继续教育学时证明打印</title>');
-            pw.document.write('<link href="http://tzjxjy.tzks.net/manager/Styles/Global.css" rel="stylesheet" type="text/css" /> ');
-            pw.document.write('</head>');
-            pw.document.write('<body>');
-            pw.document.write(pc.innerHTML);
-            pw.document.write('</body>');
-            pw.document.write('</html>');
-            pw.document.close();
-            setTimeout(function () {
-                pw.print();
-            }, 500);
-            return false;
-        }
-    </script>
-
-
 </body></html>
